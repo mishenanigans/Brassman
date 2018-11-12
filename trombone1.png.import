@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/brassman.png-46aaaf923c8eeb9026e14704c5c82cb2.stex"
+path="res://.import/trombone1.png-3854844196cd75d42bdf76d1cae68493.stex"
 
 [deps]
 
-source_file="res://brassman.png"
-dest_files=[ "res://.import/brassman.png-46aaaf923c8eeb9026e14704c5c82cb2.stex" ]
+source_file="res://trombone1.png"
+dest_files=[ "res://.import/trombone1.png-3854844196cd75d42bdf76d1cae68493.stex" ]
 
 [params]
 
@@ -16,7 +16,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -25,5 +25,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=false
+detect_3d=true
 svg/scale=1.0
