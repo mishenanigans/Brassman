@@ -3,8 +3,8 @@ extends KinematicBody2D
 const UP =Vector2(0,-1)
 const Gravity=9.8
 const Jump=-550
-const Acceleration=100
-const MaxSpeed=400
+const Acceleration=50
+const MaxSpeed=200
 var motion=Vector2()
 var friction=false
 
