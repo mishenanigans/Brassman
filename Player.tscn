@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://KinematicBody2D.gd" type="Script" id=1]
 [ext_resource path="res://brassman.png" type="Texture" id=2]
-[ext_resource path="res://icon.png" type="Texture" id=3]
+[ext_resource path="res://trombone1.png" type="Texture" id=3]
+[ext_resource path="res://icon.png" type="Texture" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -18,8 +19,7 @@ extents = Vector2( 63.3762, 62.1254 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="." index="0"]
 
-editor/display_folded = true
-position = Vector2( 512, 64 )
+position = Vector2( 832, 640 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -33,6 +33,13 @@ __meta__ = {
 
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="KinematicBody2D/Sprite" index="0"]
+
+show_behind_parent = true
+position = Vector2( 35, -26 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Visibility" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D" index="1"]
 
@@ -65,7 +72,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D7" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D5" type="StaticBody2D" parent="Wall" index="1"]
@@ -90,7 +97,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D5" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D6" type="StaticBody2D" parent="Wall" index="2"]
@@ -115,7 +122,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D6" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D16" type="StaticBody2D" parent="Wall" index="3"]
@@ -140,7 +147,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D16" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D17" type="StaticBody2D" parent="Wall" index="4"]
@@ -165,7 +172,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D17" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D18" type="StaticBody2D" parent="Wall" index="5"]
@@ -190,7 +197,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D18" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D19" type="StaticBody2D" parent="Wall" index="6"]
@@ -215,7 +222,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D19" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D20" type="StaticBody2D" parent="Wall" index="7"]
@@ -240,7 +247,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D20" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D21" type="StaticBody2D" parent="Wall" index="8"]
@@ -265,7 +272,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D21" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D22" type="StaticBody2D" parent="Wall" index="9"]
@@ -290,7 +297,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D22" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D23" type="StaticBody2D" parent="Wall" index="10"]
@@ -315,7 +322,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D23" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D24" type="StaticBody2D" parent="Wall" index="11"]
@@ -340,7 +347,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D24" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D25" type="StaticBody2D" parent="Wall" index="12"]
@@ -365,7 +372,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D25" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D26" type="StaticBody2D" parent="Wall" index="13"]
@@ -390,7 +397,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D26" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D27" type="StaticBody2D" parent="Wall" index="14"]
@@ -415,7 +422,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D27" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D28" type="StaticBody2D" parent="Wall" index="15"]
@@ -440,7 +447,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D28" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D29" type="StaticBody2D" parent="Wall" index="16"]
@@ -465,7 +472,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D29" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D4" type="StaticBody2D" parent="Wall" index="17"]
@@ -490,7 +497,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D4" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D8" type="StaticBody2D" parent="Wall" index="18"]
@@ -515,7 +522,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D8" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D9" type="StaticBody2D" parent="Wall" index="19"]
@@ -540,7 +547,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D9" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D10" type="StaticBody2D" parent="Wall" index="20"]
@@ -565,7 +572,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D10" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D11" type="StaticBody2D" parent="Wall" index="21"]
@@ -590,7 +597,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D11" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D12" type="StaticBody2D" parent="Wall" index="22"]
@@ -615,7 +622,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D12" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D13" type="StaticBody2D" parent="Wall" index="23"]
@@ -640,7 +647,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D13" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D14" type="StaticBody2D" parent="Wall" index="24"]
@@ -665,7 +672,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D14" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D15" type="StaticBody2D" parent="Wall" index="25"]
@@ -690,7 +697,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D15" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="Wall" index="26"]
@@ -715,7 +722,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D3" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Wall" index="27"]
@@ -740,7 +747,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D2" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Wall" index="28"]
@@ -765,7 +772,7 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Wall/StaticBody2D" index="1"]
 
 modulate = Color( 0, 0, 0, 1 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
 
