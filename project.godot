@@ -11,15 +11,11 @@ config_version=3
 [application]
 
 config/name="Brassman"
-run/main_scene="res://Player.tscn"
+run/main_scene="res://Level 1.tscn"
 config/icon="res://icon.png"
 
 [display]
 
-window/size/width=1920
-window/size/height=1080
-window/size/test_width=1920
-window/size/test_height=1080
 window/stretch/mode="2d"
 window/stretch/aspect="expand"
 
